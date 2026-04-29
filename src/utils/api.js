@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:8000';
+const BASE_URL = import.meta.env.VITE_API_URL || 'https://sepsis-ai-jhj0.onrender.com';
 
 // Create axios instance
 const api = axios.create({
